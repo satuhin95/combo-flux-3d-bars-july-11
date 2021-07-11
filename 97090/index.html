@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <title>animation</title>
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+   </head>
+   <body>
+         <section class="container">
+            <div id="slider">
+               <img src="images/a.jpg"/>
+               <img src="images/b.jpg"/>
+               <img src="images/c.jpg"/>
+            </div>
+         </section>
+       <script src="js/jquery.min.js" type="text/javascript"></script>
+      <script src="js/flux.js" type="text/javascript"></script>
+      <script>
+      	$(function(){ 
+      		new flux.slider('#slider', { transitions: [ 'bars3d' ], pagination: false });
+      		});       	
+      </script>
+   </body>
+</html>
